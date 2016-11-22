@@ -1,6 +1,7 @@
 
 package com.UnityPlayerActivityExtension;
 
+import com.unity3d.player.*;
 import android.app.Activity;
 import android.widget.TextView;
 import android.os.Bundle;
