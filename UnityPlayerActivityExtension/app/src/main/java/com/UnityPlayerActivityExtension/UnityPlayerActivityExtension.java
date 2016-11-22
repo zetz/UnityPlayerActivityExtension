@@ -2,19 +2,23 @@
 package com.UnityPlayerActivityExtension;
 
 import com.unity3d.player.*;
-import android.app.Activity;
-import android.widget.TextView;
 import android.os.Bundle;
 
-public class UnityPlayerActivityExtension extends Activity
+public class UnityPlayerActivityExtension extends UnityPlayerActivity
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
-        TextView  tv = new TextView(this);
-        tv.setText("Hello World!");
-        setContentView(tv);
     }
+
+	public String Hello(String msg)
+	{
+		return "Hello " + msg;
+	}
+
+	public static String HelloStatic(String msg)
+	{
+		return "Hello Static" + msg;
+	}
 }
